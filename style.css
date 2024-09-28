@@ -65,7 +65,8 @@ body {
 .text2 {
   font-family: "IBM Plex Sans", sans-serif;
   padding: 2.5rem;
-  height: 70dvh;
+  height: 100dvh;
+
   margin-bottom: 4rem;
   display: flex;
   align-items: end;
@@ -89,7 +90,18 @@ body {
   z-index: 11111111;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
+  .text p,
+  .text2 p {
+    font-size: 2.5rem;
+  }
+
+  .text2 {
+    height: 100dvh;
+  }
+}
+
+@media only screen and (max-height: 700px) {
   .text p,
   .text2 p {
     font-size: 2.5rem;
